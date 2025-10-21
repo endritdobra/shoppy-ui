@@ -1,7 +1,7 @@
-"use server"
+"use server";
 
-import {get} from "@/app/util/fetch";
+import { get } from "./common/util/fetch";
 
 export default async function getMe() {
-    return get('users/me');
+  return get("users/me");
 }
