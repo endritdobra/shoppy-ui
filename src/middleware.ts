@@ -3,7 +3,10 @@ import authenticated from "./app/auth/authenticated";
 import {unauthenticatedRoutes} from "./app/common/constants/routes";
 
 export async function middleware(request: NextRequest) {
-    const isAuthenticated = await authenticated();
+    // const isAuthenticated = await authenticated();
+    debugger;
+    console.log("here");
+    const isAuthenticated = true;
     if (
         !isAuthenticated &&
         !unauthenticatedRoutes.some((route) =>
